@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecwid Store</title>
+    <style>
+        /* Custom CSS to make Ecwid store responsive */
+        #my-store-105358264 {
+            width: 100%;
+            overflow-x: hidden;
+        }
+        @media (max-width: 600px) {
+            .ecwid-productBrowser-Grid .grid__inner {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .ecwid-productBrowser-Grid .grid__inner .grid__product {
+                width: 100% !important; /* Ensuring one product per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="my-store-105358264"></div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?105358264&data_platform=code&data_date=2024-06-28" charset="utf-8"></script>
+    <script type="text/javascript">
+        xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-105358264");
+    </script>
+</body>
+</html>
+
